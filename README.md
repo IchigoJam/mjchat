@@ -12,6 +12,10 @@ deno run -A https://ichigojam.github.io/mjchat/mjchat.js 8080
 ?"MJ GET [ip address]:8080
 ```
 
+## dependencies
+
+- [mixjuice_util](https://github.com/ichigojam/mixjuice_util)
+
 ## blog
 
 - [blog](https://fukuno.jig.jp/4407)
