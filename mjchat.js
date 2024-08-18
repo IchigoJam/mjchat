@@ -6,8 +6,6 @@ const IJ_COMMENT = "'";
 const MAX_MESSAGES = 15;
 const MAX_MESSAGE_LEN = 30;
 
-const list = [];
-
 const getMessage = (s) => {
   s = decodeURIComponent(s); // for IchigoJam web??
   s = s.replace(/\r/g, " ");
@@ -15,6 +13,8 @@ const getMessage = (s) => {
   if (s.length > MAX_MESSAGE_LEN) s = s.substring(0, MAX_MESSAGE_LEN);
   return s;
 };
+
+const list = [];
 
 serveMixJuice((path, params, data) => {
   if (params.get("C") == "CLEAR") {
